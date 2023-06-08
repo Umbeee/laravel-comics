@@ -14,33 +14,47 @@
     @vite('resources/js/app.js')
 
 </head>
-<style lang="scss" scoped>
+<style>
     main{
-     
-        height: 80vh;
-        width:
-       
+        margin-top: 50px;
+        background-color: black;
+        color: grey;
     }
-
+    .jumbo{
+        height: 300px;
+        background-image: url(".\public\images\jumbotron.jpg");
+    }
 </style>
 <body>
 
     @include( 'partials.header' )
 
-    <main class="bg-light d-flex flex-wrap row flex-wrap">
-        @foreach( $comics as $elem)
-            <div class="card text-start">
-              <img class="card-img-top" src="{{ $elem['thumb'] }}" alt="{{ $elem['title'] }}">
-              <div class="card-body">
-                <h4 class="card-title">{{ $elem['title'] }}</h4>
-                <p class="card-text">{{ $elem['description'] }}</p>
-              </div>
+    <main>
+
+        <div class="jumbo"></div>
+        <div class="container">
+
+            <div class="row g-4">
+                @foreach( $comics as $elem)
+                    <div class="text-start col-2">
+                        <img class="card-img-top" src="https://picsum.photos/200" alt="{{ $elem['title'] }}">
+                        <!-- {{ $elem['thumb'] }} -->
+                        <div class="card-body">
+                        <h5 class="card-title">{{ $elem['title'] }}</h5>
+                      </div>
+                    </div>
+                @endforeach
             </div>
-            <span></span>
-        @endforeach
+            <div class="text-center pb-3">
+                <a name="" id="" class="btn btn-primary" href="#" role="button">Button</a>
+            </div>
+            <div>
+                
+            </div>
+        </div>
     </main>
 
-    @include( 'partials.footer' )
+     @include( 'partials.footer' ) 
 
 </body>
 
