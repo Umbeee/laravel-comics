@@ -1,54 +1,49 @@
 
 
 <style>
- .main{
+ .footer{
         height: 100px;
         background-color: rgb(48,48,48);
-
+        color: white;
+        }
         .container{
-            width: 80%;
-            height: 100%;
-            margin: 0 auto;
+            height: 10vh
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-            .btn{
-                border: 2px solid rgb(2,130,249);
-            }
-                p{
-                    padding: 0.8em;
-                    color: white;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
+
+        p{
+            padding: 0.8em;
+            color: white;
+            font-weight: bold;
+        }
             
-            .socials{
-                display: flex;
-                gap: 15px;
-                align-items: center;
-            }
-                p{
-                    color: rgb(2,130,249);
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
-                img{
-                    height: 2em;
-                }
+        .socials{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        img{
+            height: 2em;
+        }
         
-    }
+    
 
 
 </style>
 
-<div class="main">
+<div>
+    <!-- qua inserire jumbo background sul grigio, con lista di 3 colonne sulla sx + logo grande azzurro dx -->
+</div>
+
+
+
+<!-- fixare immagini dei social -->
+<div class="footer">
         <div class="container">
-            <div class="btn">
-
-                <p>sign-up now!</p>
-
-            </div>
+            <a name="" id="btn-footer" class="btn" href="#" role="button">Button</a>
             <div class="socials">
                 <p>follow us</p>
                 <img src="../assets/img/footer-facebook.png" alt="fb logo">

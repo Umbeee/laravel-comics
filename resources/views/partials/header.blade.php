@@ -1,26 +1,34 @@
 
 
 <style>
+
+    #pre-header{
+        background-color: blue;
+        color: white;
+        height: 40px;
+    }
+    #pre-header .container{
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
     
     .header{
         background-color: white;
-        height: 150px;
+        height: 10vh;
     }
         
         
-        .containerr{
-            width: 80%;
-            margin: 0 auto;
+        .container{
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-            
-            
+
             ul{
                 display: flex;
                 gap: 10px;
-                line-height: 147px;
+                line-height: 9.5vh;
             }
                 li{
                     list-style-type: none;
@@ -42,9 +50,14 @@
                     }
                 
     </style>
-    
+    <div id="pre-header">
+        <div class="container d-flex">
+            <span>asdasdasd</span>
+            <span>asdasdasd</span>
+        </div>
+    </div>
     <div class="header">
-        <div class="containerr">
+        <div class="container">
             <img src="public/images/dc-logo.png" alt="asd">
             <ul>
                 <li><a href="#">characters</a></li>

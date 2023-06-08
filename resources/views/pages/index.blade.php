@@ -16,12 +16,14 @@
 </head>
 <style>
     main{
-        margin-top: 50px;
         background-color: black;
         color: grey;
+        min-height: 90vh;
     }
     .jumbo{
         height: 300px;
+        background-color: blue;
+        margin-bottom: 100px;
         background-image: url(".\public\images\jumbotron.jpg");
     }
 </style>
@@ -46,10 +48,10 @@
                 @endforeach
             </div>
             <div class="text-center pb-3">
-                <a name="" id="" class="btn btn-primary" href="#" role="button">Button</a>
+                <a name="" id="" class="btn btn-primary text-uppercase" href="#" role="button">load more</a>
             </div>
             <div>
-                
+
             </div>
         </div>
     </main>
